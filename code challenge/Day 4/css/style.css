@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+}
+
+.container span {
+    display: block;
+    letter-spacing: 2px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.text-2 {
+    color: #6abc4d;
+    font-size: 1.75vw;
+}
+
+.text-1 {
+    margin-bottom: 10px;
+    animation: animateText 3s 1;
+}

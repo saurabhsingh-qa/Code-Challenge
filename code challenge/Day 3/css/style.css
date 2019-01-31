@@ -1,0 +1,46 @@
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    font-family: "montserrat", sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 10vw;
+    font-weight: 900;
+    position: relative;
+}
+
+.text {
+    color: #34495e;
+    padding: 1vw 2vw;
+    position: relative;
+}
+
+.text::before {
+    content: attr(data-effect);
+    overflow: hidden;
+    position: absolute;
+    color: white;
+    width: 0;
+    transition: 0.6s;
+}
+
+.container::before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: #2980b9;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.6s;
+}
+
+.container:hover .text::before,
+.container:hover::before {
+    width: 100%;
+}
